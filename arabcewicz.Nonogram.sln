@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arabcewicz.Nonogram", "arabcewicz.Nonogram\arabcewicz.Nonogram.csproj", "{8A5278BE-3A7B-4FEA-B246-F124CAC0C0E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arabcewicz.NonogramTests.Unit", "arabcewicz.NonogramTests.Unit\arabcewicz.NonogramTests.Unit.csproj", "{2A1B8E52-3C32-486A-AB12-54E1A2FBCBA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A5278BE-3A7B-4FEA-B246-F124CAC0C0E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A5278BE-3A7B-4FEA-B246-F124CAC0C0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A5278BE-3A7B-4FEA-B246-F124CAC0C0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A5278BE-3A7B-4FEA-B246-F124CAC0C0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1B8E52-3C32-486A-AB12-54E1A2FBCBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1B8E52-3C32-486A-AB12-54E1A2FBCBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1B8E52-3C32-486A-AB12-54E1A2FBCBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1B8E52-3C32-486A-AB12-54E1A2FBCBA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
