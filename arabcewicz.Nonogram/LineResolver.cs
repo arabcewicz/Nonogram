@@ -14,7 +14,6 @@ namespace arabcewicz.Nonogram
             LineSpecification = lineSpecification;
             Index = index;
             LineType = lineType;
-            GenerateCandidates();
         }
 
         public event EventHandler<CellResolvedEventArgs> CellResolved;
@@ -32,9 +31,7 @@ namespace arabcewicz.Nonogram
         {
             var result = new LineResolver(LineLength, LineSpecification, Index, LineType)
                              {
-                                 _candidates =
-                                     new List<Line>(
-                                     _candidates.Count), 
+                                 _candidates = new List<Line>(_candidates.Count), 
                                  IsResolved = IsResolved
                              };
             foreach (Line candidate in _candidates)
@@ -85,7 +82,7 @@ namespace arabcewicz.Nonogram
             }
         }
 
-        private void GenerateCandidates()
+        public void GenerateCandidates()
         {
             if (Covering == 0)
             {

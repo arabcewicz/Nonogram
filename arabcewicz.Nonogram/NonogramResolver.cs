@@ -30,12 +30,14 @@ namespace arabcewicz.Nonogram
 
         public NonogramResolver Copy()
         {
+            // ReSharper disable once UseObjectOrCollectionInitializer
             var result = new NonogramResolver(Rows, Cols)
                              {
                                  _rowsSpec = _rowsSpec, 
                                  _colsSpec = _colsSpec, 
-                                 _rowsResolvers = new List<LineResolver>(Rows)
                              };
+
+            result._rowsResolvers = new List<LineResolver>(Rows);
             foreach (LineResolver resolver in _rowsResolvers)
             {
                 result._rowsResolvers.Add(resolver.Copy());
@@ -215,6 +217,7 @@ namespace arabcewicz.Nonogram
             foreach (LineSpecification rowSpec in _rowsSpec)
             {
                 var lineResolver = new LineResolver(Cols, rowSpec, rowIndex, LineType.Row);
+                lineResolver.GenerateCandidates();
                 _rowsResolvers.Add(lineResolver);
                 rowIndex++;
             }
@@ -223,6 +226,7 @@ namespace arabcewicz.Nonogram
             foreach (LineSpecification colSpec in _colsSpec)
             {
                 var lineResolver = new LineResolver(Rows, colSpec, colIndex, LineType.Col);
+                lineResolver.GenerateCandidates();
                 _colsResolvers.Add(lineResolver);
                 colIndex++;
             }

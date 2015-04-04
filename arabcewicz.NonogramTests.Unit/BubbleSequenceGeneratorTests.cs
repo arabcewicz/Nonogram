@@ -52,5 +52,16 @@ namespace arabcewicz.NonogramTests.Unit
             result.Count.ShouldBe(1);
             CollectionAssert.Contains(result, new[] { 0, 0 });
         }
+
+        [Test]
+        public void ShouldGenerateSequencesForLimit19AndLength9()
+        {
+            var tmp = new BubbleSequenceGenerator(9, 19);
+
+            var result = tmp.GenerateSequences();
+
+            result.Count.ShouldBe(2220075);
+        }
+
     }
 }

@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="BubbleSequenceGeneratorTests.cs" />
     <Compile Include="CellTests.cs" />
+    <Compile Include="NonogramResolverTest40X30Birds.cs" />
+    <Compile Include="NonogramResolverTest19X21Rabbit.cs" />
     <Compile Include="NonogramResolverTest20X20Irregular.cs" />
     <Compile Include="NonogramResolverTest20X25Cherries.cs" />
     <Compile Include="LineResolverTest.cs" />
